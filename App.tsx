@@ -106,7 +106,7 @@ const App: React.FC = () => {
             />
           </div>
           <div className="hidden md:block">
-            <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="px-6 py-2 text-xs">GARANTIR VAGA</Button>
+            <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-372393" className="px-6 py-2 text-xs">GARANTIR VAGA</Button>
           </div>
           <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -114,7 +114,7 @@ const App: React.FC = () => {
         </div>
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-[#050505] border-b border-white/10 py-6 px-6 flex flex-col items-center shadow-xl">
-             <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" onClick={() => setMobileMenuOpen(false)}>GARANTIR VAGA</Button>
+             <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-372393" onClick={() => setMobileMenuOpen(false)}>GARANTIR VAGA</Button>
           </div>
         )}
       </nav>
@@ -163,7 +163,7 @@ const App: React.FC = () => {
             </p>
             
             <div className="flex flex-col md:items-start items-center gap-4">
-              <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="px-10 py-5 text-base md:text-lg w-full md:w-auto shadow-xl shadow-[#D4AF37]/10 hover:shadow-[#D4AF37]/30">
+              <Button href="https://pay.herospark.com/comunidade-coliseu-372393" className="px-10 py-5 text-base md:text-lg w-full md:w-auto shadow-xl shadow-[#D4AF37]/10 hover:shadow-[#D4AF37]/30">
                 QUERO GARANTIR MINHA VAGA AGORA
               </Button>
             </div>
@@ -284,7 +284,7 @@ const App: React.FC = () => {
            <p className="mt-6">Eu já fiz isso.<br/>Eu faço isso todo dia.<br/>E agora eu vou te mostrar como fazer também.</p>
 
            <div className="text-center pt-10 pb-6">
-             <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="w-full md:w-auto px-14 py-6 text-xl shadow-xl">CLIQUE AQUI E COMECE AGORA</Button>
+             <Button href="https://pay.herospark.com/comunidade-coliseu-372393" className="w-full md:w-auto px-14 py-6 text-xl shadow-xl">CLIQUE AQUI E COMECE AGORA</Button>
            </div>
            
            <p className="text-center text-base text-gray-500">
@@ -378,7 +378,7 @@ const App: React.FC = () => {
                  </div>
                ))}
              </div>
-             <a href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="inline-block mt-10 text-white border-b border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors uppercase text-xs tracking-widest">
+             <a href="https://pay.herospark.com/comunidade-coliseu-372393" className="inline-block mt-10 text-white border-b border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors uppercase text-xs tracking-widest">
                Sim, eu quero garantir minha vaga
              </a>
            </div>
@@ -469,7 +469,7 @@ const App: React.FC = () => {
              </div>
              <p className="text-gray-500 text-sm mb-8">ou R$ 997,00 à vista</p>
 
-             <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="w-full py-4 text-lg mb-6">QUERO GARANTIR MINHA VAGA</Button>
+             <Button href="https://pay.herospark.com/comunidade-coliseu-372393" className="w-full py-4 text-lg mb-6">QUERO GARANTIR MINHA VAGA</Button>
              
              <div className="flex items-center justify-center gap-3 opacity-80">
                <ShieldCheck className="text-[#D4AF37]" />

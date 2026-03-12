@@ -98,7 +98,7 @@ const App: React.FC = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#050505]/95 backdrop-blur-md py-4 shadow-lg border-b border-white/10' : 'bg-transparent py-6'}`}>
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="cursor-pointer hover:opacity-90 transition-opacity">
-            {/* LOGO NO TOPO (logo_semfundo.png) */}
+            {/* LOGO NO TOPO */}
             <img 
               src="https://github.com/igor-miguel/landing-page-coliseu-2.0/blob/main/logo_semfundo.png?raw=true" 
               alt="Comunidade Coliseu" 
@@ -106,7 +106,7 @@ const App: React.FC = () => {
             />
           </div>
           <div className="hidden md:block">
-            <Button variant="outline" href="#oferta" className="px-6 py-2 text-xs">GARANTIR VAGA</Button>
+            <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="px-6 py-2 text-xs">GARANTIR VAGA</Button>
           </div>
           <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -114,7 +114,7 @@ const App: React.FC = () => {
         </div>
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-[#050505] border-b border-white/10 py-6 px-6 flex flex-col items-center shadow-xl">
-             <Button variant="outline" href="#oferta" onClick={() => setMobileMenuOpen(false)}>GARANTIR VAGA</Button>
+             <Button variant="outline" href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" onClick={() => setMobileMenuOpen(false)}>GARANTIR VAGA</Button>
           </div>
         )}
       </nav>
@@ -123,14 +123,12 @@ const App: React.FC = () => {
       <header 
         className="relative pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden flex items-center min-h-[90vh] bg-black"
         style={{
-          // A imagem cobre todo o fundo, mas focamos à direita (right) onde você deve estar
           backgroundImage: "url('https://github.com/igor-miguel/landing-page-coliseu-2.0/blob/main/igor.png?raw=true')",
-          backgroundSize: 'cover', // Mantido como cover para preencher 100%
-          backgroundPosition: '85% center', // Padrão para mobile (foca no Coliseu/esquerda)
+          backgroundSize: 'cover',
+          backgroundPosition: '85% center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Estilo inline condicional para sobrescrever a posição no desktop */}
         <style>{`
           @media (min-width: 768px) {
             header {
@@ -139,25 +137,22 @@ const App: React.FC = () => {
           }
         `}</style>
 
-        {/* GRADIENTE DE FUSÃO: Preto sólido na esquerda -> Transparente na direita */}
-        {/* Isso cria o efeito de "lado a lado" perfeito, onde o texto fica no preto e você na foto */}
+        {/* GRADIENTE DE FUSÃO */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/90 to-transparent z-0"></div>
         
-        {/* Camada extra para mobile para garantir leitura */}
+        {/* Camada extra para mobile */}
         <div className="absolute inset-0 bg-black/40 md:hidden z-0"></div>
 
-        {/* EFEITO DE LUZ DOURADA (Mais sutil e atrás do texto) */}
+        {/* EFEITO DE LUZ DOURADA */}
         <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-[#D4AF37] rounded-full blur-[250px] opacity-10 pointer-events-none z-0" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full h-full flex items-center">
           
-          {/* TEXTO - Limitado a 55% da largura para não cobrir o rosto na direita */}
           <div className="w-full md:w-[55%] text-center md:text-left">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal leading-tight text-white mb-8 drop-shadow-2xl">
               Fature R$10.000/mês&nbsp;com <br />
               <span className="italic font-medium text-[#D4AF37] pb-2 relative inline-block">
                 Inteligência Artificial
-                {/* Pequeno sublinhado dourado sutil */}
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-[#D4AF37]/50 rounded-full"></span>
               </span> <br />
               começando do zero.
@@ -168,7 +163,7 @@ const App: React.FC = () => {
             </p>
             
             <div className="flex flex-col md:items-start items-center gap-4">
-              <Button href="#oferta" className="px-10 py-5 text-base md:text-lg w-full md:w-auto shadow-xl shadow-[#D4AF37]/10 hover:shadow-[#D4AF37]/30">
+              <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="px-10 py-5 text-base md:text-lg w-full md:w-auto shadow-xl shadow-[#D4AF37]/10 hover:shadow-[#D4AF37]/30">
                 QUERO GARANTIR MINHA VAGA AGORA
               </Button>
             </div>
@@ -289,7 +284,7 @@ const App: React.FC = () => {
            <p className="mt-6">Eu já fiz isso.<br/>Eu faço isso todo dia.<br/>E agora eu vou te mostrar como fazer também.</p>
 
            <div className="text-center pt-10 pb-6">
-             <Button href="#oferta" className="w-full md:w-auto px-14 py-6 text-xl shadow-xl">CLIQUE AQUI E COMECE AGORA</Button>
+             <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="w-full md:w-auto px-14 py-6 text-xl shadow-xl">CLIQUE AQUI E COMECE AGORA</Button>
            </div>
            
            <p className="text-center text-base text-gray-500">
@@ -300,7 +295,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. PROVAS SOCIAIS (MOVIDO PARA CÁ) */}
+      {/* 4. PROVAS SOCIAIS */}
       <section className="py-24 bg-white text-black border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-center mb-16 text-black">
@@ -383,7 +378,7 @@ const App: React.FC = () => {
                  </div>
                ))}
              </div>
-             <a href="#oferta" className="inline-block mt-10 text-white border-b border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors uppercase text-xs tracking-widest">
+             <a href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="inline-block mt-10 text-white border-b border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors uppercase text-xs tracking-widest">
                Sim, eu quero garantir minha vaga
              </a>
            </div>
@@ -447,7 +442,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Caprichei MUITO nessa oferta.</h2>
           <p className="text-gray-400 mb-10">Veja tudo o que você recebe ao se tornar Membro Fundador:</p>
-           
+            
           <div className="bg-[#0a0a0a] border border-[#D4AF37]/30 p-8 md:p-14 relative shadow-[0_0_60px_rgba(212,175,55,0.1)] max-w-xl mx-auto rounded-sm">
              <div className="absolute top-0 right-0 bg-[#D4AF37] text-black text-[10px] font-bold px-8 py-1 uppercase rotate-12 translate-x-8 translate-y-4 shadow-lg">Oferta Limitada</div>
 
@@ -474,7 +469,7 @@ const App: React.FC = () => {
              </div>
              <p className="text-gray-500 text-sm mb-8">ou R$ 997,00 à vista</p>
 
-             <Button href="https://payfast.greenn.com.br/147301" className="w-full py-4 text-lg mb-6">QUERO GARANTIR MINHA VAGA</Button>
+             <Button href="https://pay.herospark.com/comunidade-coliseu-antiga-485642" className="w-full py-4 text-lg mb-6">QUERO GARANTIR MINHA VAGA</Button>
              
              <div className="flex items-center justify-center gap-3 opacity-80">
                <ShieldCheck className="text-[#D4AF37]" />
